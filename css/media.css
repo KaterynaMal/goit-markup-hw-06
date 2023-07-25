@@ -1,0 +1,91 @@
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 428px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+          .baner-title {
+            font-size: 56px;
+            line-height: 1.07;
+               
+                letter-spacing: 0.12px;
+          }
+
+                  .benefits-items {
+                      flex-basis: calc((100% - 24px) / 2);
+        
+                  }
+
+                  .list.benefits {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 24px;
+                  }
+        }
+
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .thumb-benefits {
+         display: flex;
+        }
+
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+}
+
+ .baner-title {
+     font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500px;
+        letter-spacing: 0.04px;
+ }
+ .list.benefits {
+    gap: 24px;
+ }
+
+ .benefits-items {
+     flex-basis: calc((100% - 72px) / 4);
+
+ }
+
+ .section.benefits {
+     padding-bottom: 0;
+ }
+}
+
+
+
+@media (max-width: 320px) {
+    .list.clients {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1158px) {
+    .social {
+        display: block;
+        width: 208px;
+        margin-right: 80px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .form-input {
+        opacity: 1;
+        width: 264px;
+    }
+}
