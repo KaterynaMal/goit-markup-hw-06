@@ -10,23 +10,36 @@
         max-width: 768px;
     }
 
-          .baner-title {
-            font-size: 56px;
-            line-height: 1.07;
-               
-                letter-spacing: 0.12px;
-          }
+    .baner-title {
+        font-size: 56px;
+        line-height: 1.07;
+        text-transform: none;
+        letter-spacing: 0.12px;
+    }
 
-                  .benefits-items {
-                      flex-basis: calc((100% - 24px) / 2);
+    .benefits-items {
+        flex-basis: calc((100% - 24px) / 2);
         
-                  }
+    }
 
-                  .list.benefits {
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    gap: 24px;
-                  }
+    .list.benefits {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .team-list {
+        column-gap: 24px;
+        row-gap: 64px;     
+    }
+
+    .list.clients {
+        column-gap: 24px;
+    }
+
+        .clients-link {
+            width: 168px;
+        }
         }
 
 
@@ -38,21 +51,40 @@
         padding-right: 15px;
     }
 
+    .body {
+        align-self: normal;
+    }
+
     .thumb-benefits {
          display: flex;
         }
 
     .section {
-        padding-top: 96px;
-        padding-bottom: 96px;
+        padding-top: 120px;
+        padding-bottom: 120px;
 }
 
  .baner-title {
-     font-size: 20px;
-    line-height: 1.2;
-    font-weight: 500px;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500px;
         letter-spacing: 0.04px;
+        text-transform: none;
  }
+
+.benefits-title {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: none;
+    letter-spacing: 0.4px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.benefits p {
+    font-weight: 400;
+}
+
  .list.benefits {
     gap: 24px;
  }
@@ -65,15 +97,39 @@
  .section.benefits {
      padding-bottom: 0;
  }
+
+ .team-list {
+    flex-wrap: nowrap;
+     column-gap: 24px;
+
+ }
+
+ .team-item {
+    
+ }
+
+ .list.clients {
+     
+    flex-wrap: nowrap;
+ }
+ 
+ .list.clients {
+    
+    
+ }
+
+ .clients-link {
+width: 168px;
+ }
 }
 
 
 
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {
     .list.clients {
         justify-content: center;
     }
-}
+}*/
 
 @media (min-width: 1158px) {
     .social {

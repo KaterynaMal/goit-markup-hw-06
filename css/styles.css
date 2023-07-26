@@ -14,15 +14,16 @@
 }
 
 body {
-  color: var(--primary-text-color);
+  color: var(--primary-text-color), -- ;
   background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.32px;
   font-style: normal;
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
+align-self: stretch;
   margin: 0;
 }
 
@@ -250,7 +251,12 @@ ul {
   
   display: flex;
   justify-content: center;
-  
+  font-family: inherit;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
   cursor: pointer;
   border: 2px solid var(--main-blue-color);
   border-radius: 4px;
@@ -340,8 +346,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits-title,
-.list-title,
-.team-title {
+.list-title {
   /*color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
@@ -387,25 +392,34 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .team-title {
   text-align: center;
   margin-bottom: 8px;
+  color: var(--title-text-color);
+  font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.4px;
 }
 
 .team-position {
   margin-bottom: 8px;
   text-align: center;
+  font-weight: 400;
 }
 
 .team-list {
   display: flex;
-  flex-direction: column;
-  gap: 72px;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 72px;
   
 }
 
 .team-item {
-  /*flex-basis: calc((100% - 72px) / 4);*/
-  width: 264px;
-  margin-left: auto;
-  margin-right: auto;
+  flex-basis: 264px;
+ 
+  margin-left: 0;
+  margin-right: 0;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     border-top: none;
@@ -448,17 +462,18 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /*  --------- Our clients costomers ---------*/
 
-/*.list.clients {
-  gap: 24px;
-}*/
+
 
 .list.clients {
   display: flex;
     flex-wrap: wrap;
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
     row-gap: 72px; 
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     column-gap: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
 }
 
 .icons-clients {
