@@ -119,6 +119,10 @@
         text-transform: none;
  }
 
+ section.directions {
+     display: flex;
+ }
+
 .benefits-title {
     font-weight: 500;
     font-size: 20px;
