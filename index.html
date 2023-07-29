@@ -54,20 +54,21 @@
                     
                 </a>
             </li>
-        </ul> 
-
-        
+        </ul>
         </address>
-        </div>
         
-        <button class="menu-btn" type="button" js-open-menu>
+        
+        <button 
+        class="menu-btn js-open-menu" 
+        aria-expanded="false"
+          aria-controls="mobile-menu">
             <svg class="menu-hamburger-icon" width="32" height="22">
                 <use href="./images/icons.svg#menu-hamburger"></use>
             </svg>
         </button>
         
-        <div class="mob-menu" js-menu-container>
-<button class="menu-close-btn" type="button" js-close-menu>
+        <div class="mob-menu js-menu-container" id="mobile-menu">
+<button class="menu-close-btn js-close-menu">
     <svg class="menu-icon" width="8" height="8">
         <use href="./images/icons.svg#close"></use>
     </svg>
@@ -82,7 +83,7 @@
             <a href="./portfolio.html" class="menu-nav-link link">Portfolio</a>
         </li>
         <li class="menu-nav-item">
-            <a href="./mobile.html" class="menu-nav-link link">Contacts</a>
+            <a href="" class="menu-nav-link link">Contacts</a>
         </li>
     </ul>
 </nav>
@@ -135,6 +136,7 @@
     </ul>
 </address>
 
+        </div>
         </div>
     </header>
 
