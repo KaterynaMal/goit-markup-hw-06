@@ -22,7 +22,7 @@
 
 <body>
     <!--Header-->
-    <!--<header>
+    <header>
         <div class="container">  
         <nav class="header-nav">
         <a href="./index.html" class="logo link"><span style="color: #4D5AE5;">Web</span>Studio</a>
@@ -55,7 +55,7 @@
         </address>
         </div>        
     </header>
--->
+
     <main>
         <!--Baner-->
        <section class="baner">
@@ -124,17 +124,25 @@
             <ul class="list list-directions">
                 <li class="directions-item">
                     <a href="" class="directions-item-link">
-                    <img class="img" src="./images/img1.jpg" alt="work space of computer" width="360">
+                    <img class="img" 
+                    srcset="./images/img1.jpg 1x, ./images/img1-2x-2.jpg 2x"
+                    src="./images/img1.jpg" 
+                    alt="work space of computer" 
+                    width="360">
                     </a>
                 </li> 
                 <li class="directions-item">
                     <a href="" class="directions-item-link">
-                    <img class="img" src="./images/img2.jpg" alt="telephon aplication" width="360">  
+                    <img class="img"
+                    srcset="./images/img2.jpg 1x, ./images/img2-2x-2.jpg 2x" 
+                    src="./images/img2.jpg" alt="telephon aplication" width="360">  
                     </a>
                 </li>
                 <li class="directions-item">
                     <a href="" class="directions-item-link">
-                    <img class="img" src="./images/img3.jpg" alt="telephon aplication and computer program" width="360">
+                    <img class="img"
+                    srcset="./images/img3.jpg 1x, ./images/img3-2x-2.jpg 2x" 
+                    src="./images/img3.jpg" alt="telephon aplication and computer program" width="360">
                     </a>
                 </li>
             </ul>
@@ -147,7 +155,10 @@
             <h2 class="section-title">Our Team</h2>
             <ul class="list team-list">
                 <li class="team-item">
-                    <img class="img" src="./images/guerrero.jpg" alt="Mark Guerrero photo" width="264">
+                    <img class="img"
+                    srcset="./images/guerrero.jpg 1x, ./images/guerrero-2x.jpg 2x" 
+                    src="./images/guerrero.jpg" 
+                    alt="Mark Guerrero photo" width="264">
                     <div class="teams">
                     <h3 class="team-title">Mark Guerrero</h3>
                     <p class="team-position">Product Designer</p>
@@ -187,7 +198,10 @@
                     </div>
                 </li>                 
                 <li class="team-item">
-                    <img class="img" src="./images/ford.jpg" alt="Tom Ford photo" width="264">
+                    <img class="img"
+                    srcset="./images/ford.jpg 1x, ./images/ford-2x.jpg 2x" 
+                    src="./images/ford.jpg" 
+                    alt="Tom Ford photo" width="264">
                     <div class="teams">
                     <h3 class="team-title">Tom Ford</h3>
                     <p class="team-position">Frontend Developer</p>
@@ -227,7 +241,10 @@
                     </div>
                 </li> 
                 <li class="team-item">
-                    <img class="img" src="./images/garcia.jpg" alt="Camila Garcia photo" width="264">
+                    <img class="img"
+                    srcset="./images/garcia.jpg 1x, ./images/garcia-2x.jpg 2x" 
+                    src="./images/garcia.jpg" 
+                    alt="Camila Garcia photo" width="264">
                     <div class="teams">
                     <h3 class="team-title">Camila Garcia</h3>
                     <p class="team-position">Marketing</p>
@@ -267,7 +284,10 @@
                     </div>
                 </li> 
                 <li class="team-item">
-                    <img class="img" src="./images/wilson.jpg" alt="Daniel Wilson photo" width="264">
+                    <img class="img"
+                    srcset="./images/wilson.jpg.jpg 1x, ./images/wilson-2x.jpg 2x" 
+                    src="./images/wilson.jpg" 
+                    alt="Daniel Wilson photo" width="264">
                     <div class="teams">
                     <h3 class="team-title">Daniel Wilson</h3>
                     <p class="team-position">UI Designer</p>
@@ -435,7 +455,7 @@
     </footer>
    
    <!--Modal-->
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-button" data-modal-close>
             <svg class="modal-icon" width="8" height="8">
@@ -516,6 +536,6 @@
         </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
 </body>
 </html>
