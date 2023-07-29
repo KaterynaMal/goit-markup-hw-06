@@ -22,6 +22,11 @@
     margin-right: 249px;
 
 }
+
+.social-list-menu {
+    gap: 56px;
+    justify-content: flex-start;
+}
 }
 
 
@@ -114,7 +119,7 @@
             color: var(--curent-accent-color);
         }
 
-                .header-nav,
+                .site-nav,
                 .header-address {
                     display: flex;
                     align-items: center;
