@@ -731,6 +731,8 @@ footer {
 /*footer .container {
   display: flex;
   align-items: baseline;
+  margin-left: 0;
+  margin-right: 0;
 }*/
 
 
@@ -750,6 +752,7 @@ footer .logo {
   display: block;
   margin-bottom: 18px;
   margin-right: 0;
+  padding: 0;
 }
 
 footer .logo,
@@ -806,7 +809,6 @@ footer .social-icons-link:focus {
 
 .footer-title {
   color: var(--primary-white-color);
-  font-weight: 500;
   
   margin-bottom: 16px;
 }

@@ -170,11 +170,11 @@
 
          footer .container {
              display: flex;
+             padding-left: 108px;
              align-items: baseline;
              flex-wrap: wrap;
              
-             margin-left: 108px;
-             margin-right: auto;
+             margin-left: auto;
 
              
          }
@@ -194,10 +194,7 @@
             align-self: flex-start;
          }
 
-         .footer-paragraph {
-            
-         }
-    
+        
          .social {
              display: block;
             width: 208px;
@@ -316,8 +313,10 @@
  }
 
  footer .container {
-     display: flex;
-     align-items: baseline;
+     
+        display: flex;
+        align-items: baseline;
+        padding-left: 0;
  }
 
  
