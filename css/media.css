@@ -18,8 +18,10 @@
         .form-input {
             width: 264px;
 }
+.logo {
+    margin-right: 249px;
 
-
+}
 }
 
 
@@ -36,14 +38,96 @@
     }
 
     .container {
-        max-width: 768px;
+       max-width: 768px;
+      
     }
+
+        .menu-btn {
+            display: none;
+        }
+
+                .logo {
+                    margin-right: 120px;
+                   
+                }
+
+               
+    
+    .site-nav-link {
+            color: var(--title-text-color);
+            font-weight: 500;
+            display: block;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .site-nav-link:hover,
+        .site-nav-link:focus {
+            color: var(--curent-accent-color);
+        }
+    
+        .site-nav-list,
+        .contacts-list {
+            gap: 40px;
+            display: flex;
+        }
+    
+        .current {
+            color: var(--curent-accent-color);
+    
+    
+            position: relative;
+        }
+    
+        .current::after {
+            content: '';
+            background-color: var(--curent-accent-color);
+    
+            position: absolute;
+            height: 4px;
+            bottom: -1px;
+            left: 0;
+            border-radius: 2px;
+            width: 100%;
+    
+        }
+    
+        .header-address {
+            font-style: normal;
+        }
+    
+        .contacts-list {
+            margin-left: auto;
+        }
+    
+        .contacts-item-link {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            color: var(--primary-text-color);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        }
+    
+        .contacts-item-link:hover,
+        .contacts-item-link:focus {
+            color: var(--curent-accent-color);
+        }
+
+                .header-nav,
+                .header-address {
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 1;
+        
+                }
 
     .baner {
         padding-top: 112px;
             padding-bottom: 204px;
         
-            max-width: 768px;
+            min-width: 768px;
+           
             height: 436px;
     }
 
@@ -160,6 +244,11 @@
         align-self: normal;
     }
 
+         .logo {
+             margin-right: 76px;
+    
+         }
+
     .baner {
              padding-top: 188px;
              padding-bottom: 292px;
@@ -252,7 +341,7 @@ footer .label {
         flex-direction: row;
 }
 
-.logo,
+footer .logo,
 .footer-title {
     align-self: flex-start;
 }
