@@ -1,21 +1,27 @@
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .baner {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-            url(../images/Dark-bg-mobile-2x-2.jpg);
+@media screen and (max-width: 428px) {
+    .modal {
+        width: 100%;
     }
 }
 
 
 @media screen and (min-width: 428px) {
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .baner {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/Dark-bg-mobile-2x-2.jpg);
+        }
+    }
+
     .container {
         max-width: 428px;
     }
 
         .form-input {
-            width: 264px;
+            width: 398px;
 }
 .logo {
     margin-right: 249px;
@@ -227,6 +233,10 @@
              flex-direction: row;
          }
 
+                                 .form-input {
+                                     width: 264px;
+                                 }
+
                  .modal {
                      width: 408px;
                      padding: 72px 24px 24px 24px;
@@ -373,19 +383,9 @@ footer .logo,
     align-self: flex-start;
 }
 
-
- .team-item {
-    
- }
-
  .list.clients {
      
     flex-wrap: nowrap;
- }
- 
- .list.clients {
-    
-    
  }
 
  .clients-link {
