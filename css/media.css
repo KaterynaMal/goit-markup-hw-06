@@ -9,7 +9,6 @@
 }
 
 
-
 @media screen and (min-width: 428px) {
     .container {
         max-width: 428px;
@@ -72,8 +71,7 @@
             color: var(--curent-accent-color);
         }
     
-        .site-nav-list,
-        .contacts-list {
+        .site-nav-list {
             gap: 40px;
             display: flex;
         }
@@ -126,6 +124,20 @@
                     flex-grow: 1;
         
                 }
+
+                                 .contacts-list {
+                                     gap: 12px;
+                                     display: flex;
+                                     flex-direction: column;
+                                 }
+
+    .contacts-item-link {
+        padding: 0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.48px;
+    }
 
     .baner {
         padding-top: 112px;
@@ -250,7 +262,18 @@
              margin-right: 76px;
     
          }
+ .contacts-list {
+     gap: 40px;
+     display: flex;
+     flex-direction: row;
+ }
 
+ .contacts-item-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+ }
+                
     .baner {
              padding-top: 188px;
              padding-bottom: 292px;
