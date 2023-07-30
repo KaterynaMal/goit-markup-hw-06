@@ -233,6 +233,11 @@ letter-spacing: 0.4px;
 margin-bottom: 48px;
 }
 
+.menu-mail-link:hover,
+.menu-mail-link:focus {
+  color: var(--curent-accent-color);
+}
+
 
 /*  ------- Main content ------------  */
 
@@ -316,8 +321,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 
-  /*background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-    url(./images/darkbg2.jpg);*/
+ 
   background-color: var(--dark-background-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -591,11 +595,14 @@ display: none;
 /*  --------------------------------- Portfolio page ------------------ */
 
 
+
 .section.portfolio {
-padding-top: 100px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .btn.secondary {
+  display: flex;
   cursor: pointer;
   color: var(--main-blue-color);
   background-color: var(--secondary-background-color);
@@ -605,15 +612,15 @@ padding-top: 100px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  
+  font-style: normal;
   border-radius: 4px;
   border: 1px solid var(--main-border-color);
 
-  min-width: 69px;
-    padding: 12px 24px;
+  min-width: 53px;
+  padding: 8px 16px;
     
     align-items: center;
-    margin-bottom: 72px;
+ 
 
     transition-property: color, background-color, border-color, box-shadow;
       transition-duration: 250ms, 250ms, 250ms, 250ms;
@@ -632,10 +639,13 @@ padding-top: 100px;
 
 .btn-list {
   display: flex;
-  gap:24px;
-  justify-content: center;
+  flex-wrap: wrap;
+ 
+  column-gap:24px;
+  row-gap: 16px;
+  
 
-  margin-bottom: 0;
+  margin-bottom: 48px;
 }
 
 .works-overlay-thumb {
@@ -675,15 +685,20 @@ padding-top: 100px;
   letter-spacing: 0.32px;
 }
 
+.variaty {
+  font-weight: 400;
+}
+
 .work-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 24px;
+ 
 }
 
 .works-item {
-  flex-basis: calc((100% - 48px) / 3);
+  /*flex-basis: 396px;*/
   box-shadow: none;
   
 }
@@ -715,7 +730,10 @@ padding-top: 100px;
   line-height: 1.2;
   letter-spacing: 0.4px;
   text-transform: none;
+  text-align: left;
 }
+
+
 
 /* ----------  footer ----------  */
 
