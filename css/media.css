@@ -465,6 +465,10 @@ width: 168px;
             transform: translateY(0%);
         }
     
+.works-item-overlay {
+    display: flex;
+}
+
         .works-item-overlay {
             color: var(--footer-address-text-color);
             background-color: var(--main-blue-color);
