@@ -1,7 +1,16 @@
 
-@media screen and (max-width: 428px) {
-    .modal {
-        width: 100%;
+  @media screen and (max-width: 427px) {
+    .menu-tel-link {
+        font-size: 20px;
+    }
+
+    .social-list-menu {
+        gap: 30px;
+        justify-content: flex-start;
+    }
+    
+    .form-input {
+        width: 265px;
     }
 }
 
@@ -108,8 +117,6 @@
         gap: 12px;
         display: flex;
         flex-direction: column;
-        padding-top: 16px;
-        padding-bottom: 16px;
     }
 
     .contacts-item {
@@ -149,6 +156,7 @@
         padding-bottom: 204px;
         min-width: 768px;
         height: 436px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/dark-bg-pl-1x.jpg);
     }
 
     .baner-title {
@@ -161,6 +169,10 @@
 
     .benefits-items {
         flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .benefits-title {
+        text-align: left;
     }
 
     .list.benefits {
@@ -185,15 +197,17 @@
 
     footer .container {
         display: flex;
-        padding-left: 108px;
+        width: 584px;
         align-items: baseline;
         flex-wrap: wrap;
         margin-left: auto; 
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
     .footer-nav {
         width: 264px;
-        margin-right: 24px;   
+        margin-bottom: 0;
     }
 
     .footer-title {
@@ -208,7 +222,8 @@
         
     .social {
         display: block;
-        width: 208px;    
+        width: 208px; 
+        margin-bottom: 0;   
     }
 
     .footer-label {
@@ -222,14 +237,16 @@
     .footer-form {
         display: flex;
         flex-direction: row;
+        gap: 24px;
     }
 
+    
     .form-input {
         width: 264px;
     }
 
     .modal {
-        width: 408px;
+        max-width: 408px;
         padding: 72px 24px 24px 24px;
     }
                  
@@ -300,6 +317,7 @@
         gap: 40px;
         display: flex;
         flex-direction: row;
+        
     }
 
     .contacts-item-link {
@@ -313,6 +331,7 @@
         padding-bottom: 292px;
         max-width: 1440px;
         height: 600px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/peopleoffice.jpg);
     }
 
     .thumb-benefits {
@@ -372,8 +391,11 @@
 
     footer .container {
         display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
         align-items: baseline;
         padding-left: 15px;
+        column-gap: 0;
     }
 
     footer {
@@ -388,12 +410,15 @@
     .footer-nav {
       width: 264px;
       margin-right: 120px;
+      margin-bottom: 0;
+      
     }
 
     .social {
       display: block;
       width: 208px;
       margin-right: 80px;
+      margin-bottom: 0;
    }
 
     footer .social-links.list {
@@ -425,11 +450,6 @@
 
      .clients-link {
         width: 168px;
-    }
-
-    .modal {
-       width: 408px;
-       padding: 72px 24px 24px 24px;
     }
 
     .section.portfolio {
