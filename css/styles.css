@@ -101,11 +101,12 @@ display: flex;
   border: none;
   cursor: pointer;
   
-  width: 100%;
+  
   height: 100%;
   
   margin-left: auto;
-  margin-right: auto;
+  /*width: 100%;
+  margin-right: auto;*/
   padding: 0;
  
   
@@ -644,7 +645,7 @@ display: none;
   column-gap:24px;
   row-gap: 16px;
   
-
+margin-right: 100px;
   margin-bottom: 48px;
 }
 
@@ -832,7 +833,7 @@ footer .social-icons-link:focus {
       flex-direction: column;
       align-items: center;
      
-    gap: 24px;
+    gap: 16px;
     /*justify-content: center;*/
 }
 

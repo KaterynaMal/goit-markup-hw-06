@@ -3,6 +3,7 @@
     .modal {
         width: 100%;
     }
+
 }
 
 
@@ -41,6 +42,7 @@
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+       
         .baner {
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/Dark-bg-planshet-2x-2.jpg);
@@ -109,7 +111,20 @@
     
         .contacts-list {
             margin-left: auto;
+            gap: 12px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 16px;
+                padding-bottom: 16px;
         }
+
+        /*.mail-link {
+            margin-bottom: 12px;
+        }*/
+.contacts-item {
+    display: flex;
+}
+       
     
         .contacts-item-link {
             padding-top: 24px;
@@ -132,11 +147,7 @@
         
                 }
 
-                                 .contacts-list {
-                                     gap: 12px;
-                                     display: flex;
-                                     flex-direction: column;
-                                 }
+                                 
 
     .contacts-item-link {
         padding: 0;
@@ -171,8 +182,11 @@
     .list.benefits {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
+
+          
 
     .team-list {
         column-gap: 24px;
@@ -193,10 +207,10 @@
              align-items: baseline;
              flex-wrap: wrap;
              
-             margin-left: auto;
-
-             
+             margin-left: auto; 
          }
+
+       
 
          .footer-nav {
              width: 264px;
@@ -259,6 +273,9 @@ flex-wrap: nowrap;
 gap: 24px;
 justify-content: center;
 margin-bottom: 64px;
+
+        margin-right: 0;
+    
         }
 
                 .work-list {
@@ -333,6 +350,10 @@ margin-bottom: 64px;
          display: flex;
         }
 
+        .list.benefits {
+           
+            column-gap: 24px;
+        }
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -386,9 +407,19 @@ margin-bottom: 64px;
      
         display: flex;
         align-items: baseline;
-        padding-left: 0;
+        padding-left: 15px;
+       
  }
 
+  footer {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+  }
+
+  .footer-paragraph {
+    margin-bottom: 0;
+  }
  
  .footer-nav {
   width: 264px;
@@ -399,6 +430,11 @@ margin-bottom: 64px;
       display: block;
       width: 208px;
       margin-right: 80px;
+      
+  }
+
+  footer .social-links.list {
+    margin-bottom: 0;
   }
 
 .form-input {
@@ -413,7 +449,10 @@ footer .label {
 .footer-form {
     display: flex;
         flex-direction: row;
-}
+                gap: 24px;
+              
+            }
+
 
 footer .logo,
 .footer-title {
@@ -438,6 +477,9 @@ width: 168px;
             padding-top: 100px;
             padding-bottom: 120px;
         }
+        .btn-list {
+            margin-right: 0;
+        }
 
                 /* .work-list {
                      
@@ -448,6 +490,10 @@ width: 168px;
       margin-bottom: 72px;
       padding: 0;
                  }
+
+    .work-list {
+        row-gap: 48px;
+    }             
 
      .works-item {
          flex-basis: calc((100% - 48px) / 3);

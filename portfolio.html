@@ -42,7 +42,7 @@
         <address class="header-address">
             <ul class="contacts-list list">
                 <li class="contacts-item">
-                    <a href="mailto:info@devstudio.com" class="contacts-item-link link">info@devstudio.com</a>
+                    <a href="mailto:info@devstudio.com" class="contacts-item-link mail-link link">info@devstudio.com</a>
                 </li>
                 <li class="contacts-item">
                     <a href="tel:+11(000)111-11-11" class="contacts-item-link link">+11 (000) 111-11-11
@@ -362,7 +362,23 @@
             <li  class="works-item">
                 <a href="" class="link works-link">
                     <div class="works-overlay-thumb">
-                <img class="img" src="./images/organicfood.jpg" alt="Organic Food" width="396">
+                        <picture>
+                            <source 
+                            srcset="./images/organicfood.jpg 1x,
+                                            ./images/organicfood-2x.jpg 2x" 
+                            media="(min-width: 1158px)">
+                            <source 
+                            srcset="./images/organicfood-pl-1x.jpg 1x,
+                                    ./images/organicfood-pl-2x.jpg 2x" 
+                            media="(min-width: 768px)">
+                            <source 
+                            srcset="./images/organicfood-mob-1x.jpg 1x,
+                                    ./images/organicfood-mob-2x.jpg 2x" 
+                            media="(min-width: 428px)">
+                        
+                        <img class="img" src="./images/organicfood.jpg" alt="Organic Food" width="396">
+                        </picture>
+                
                 <p class="works-item-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                     · Exotic Fruit Ecommerce App ·
                     Cloud Storage App</p>
@@ -376,7 +392,23 @@
             <li  class="works-item">
                 <a href="" class="link works-link">
                     <div class="works-overlay-thumb">
-                <img class="img" src="./images/freshcoffee.jpg" alt="Fresh Coffee" width="360">
+                        <picture>
+                            <source 
+                            srcset="./images/freshcoffee.jpg 1x,
+                                    ./images/freshcoffee-2x.jpg 2x" 
+                            media="(min-width: 1158px)">
+                            <source 
+                            srcset="./images/freshcoffee-pl-1x.jpg 1x,
+                                    ./images/freshcoffee-pl-2x.jpg 2x" 
+                            media="(min-width: 768px)">
+                            <source 
+                            srcset="./images/freshcoffee-mob-1x.jpg 1x,
+                                    ./images/freshcoffee-mob-2x.jpg 2x" 
+                            media="(min-width: 428px)">
+                        
+                            <img class="img" src="./images/freshcoffee.jpg" alt="Fresh Coffee" width="396">
+                        </picture>
+                
                 <p class="works-item-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                     · Exotic Fruit Ecommerce App ·
                     Cloud Storage App</p>
@@ -408,7 +440,10 @@
             <p class="footer-title">Social media</p>
             <ul class="social-links list">
                 <li class="social-icons">
-                    <a href="" class="social-icons-link">
+                    <a href="" class="social-icons-link"
+                        aria-label="instagram"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         <svg class="icons-footer" width="24" height="24">
                             <use href="./images/icons.svg#instagram"></use>
                         </svg>
@@ -416,7 +451,10 @@
                 </li>
 
                 <li class="social-icons">
-                    <a href="" class="social-icons-link">
+                    <a href="" class="social-icons-link"
+                        aria-label="twitter"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         <svg class="icons-footer" width="24" height="24">
                             <use href="./images/icons.svg#twitter"></use>
                         </svg>
@@ -424,7 +462,10 @@
                 </li>
 
                 <li class="social-icons">
-                    <a href="" class="social-icons-link">
+                    <a href="" class="social-icons-link"
+                        aria-label="facebook"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         <svg class="icons-footer" width="24" height="24">
                             <use href="./images/icons.svg#facebook"></use>
                         </svg>
@@ -432,7 +473,10 @@
                 </li>
 
                 <li class="social-icons">
-                    <a href="" class="social-icons-link">
+                    <a href="" class="social-icons-link"
+                        aria-label="linkedin"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         <svg class="icons-footer" width="24" height="24">
                             <use href="./images/icons.svg#linkedin"></use>
                         </svg>
