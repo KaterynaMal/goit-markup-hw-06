@@ -46,18 +46,8 @@
 
 /*-----    768   -----*/
 
+
 @media screen and (min-width: 768px) {
-
-@media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-       
-        .baner {
-            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/Dark-bg-planshet-2x-2.jpg);
-
-        }
-    }
 
     .container {
        max-width: 768px;
@@ -151,13 +141,23 @@
         letter-spacing: 0.48px;
     }
 
+
+         .baner {
+             padding-top: 112px;
+             padding-bottom: 204px;
+             min-width: 768px;
+             height: 436px;
+             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/dark-bg-pl-1x.jpg);
+         }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
     .baner {
-        padding-top: 112px;
-        padding-bottom: 204px;
-        min-width: 768px;
-        height: 436px;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/dark-bg-pl-1x.jpg);
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/bg-pl-2x.jpg);
     }
+}
 
     .baner-title {
         font-size: 56px;
@@ -290,14 +290,6 @@
 
 @media screen and (min-width: 1158px) {
 
-@media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .baner {
-            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/people-office-2x-2.jpg);
-        }
-    }
 
     .container {
         max-width: 1158px;
@@ -333,6 +325,15 @@
         height: 600px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/peopleoffice.jpg);
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .baner {
+                background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                    url(../images/people-office-2x-2.jpg);
+            }
+        }
 
     .thumb-benefits {
         display: flex;
